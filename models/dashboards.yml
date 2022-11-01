@@ -1,0 +1,15 @@
+version: 2
+exposures:
+  - name: Some Dashboard
+    type: dashboard
+    maturity: low
+    url: https://92f4fadb.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=CLzSQHWlZDimSZKfhW48DEtR19MKX_wmsktfyNedxWxevneJddZob7wW6cLoD8PR
+    description: Dashboard test with preset.io
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: John Doe
+      email: johndoe@hotmail.com
